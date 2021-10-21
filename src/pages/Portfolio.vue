@@ -1,11 +1,11 @@
 <template>
     <div>
-        ABC
+        <h1 class="title">Portfolio</h1>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'WhyHireMe',
-}
+    name: 'Portfolio',
+}   
 </script>

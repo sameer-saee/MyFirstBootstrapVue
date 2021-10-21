@@ -1,8 +1,11 @@
 <template>
   <div id="app" v-on:scroll = "handleScroll">
     <Navigation />
-    <router-view></router-view>
-    <b-container fluid class="py-5 bg-p-light">
+    <b-container class="py-lg-5 py-md-4 py-3">
+      <router-view></router-view>
+    </b-container>
+    <Footer />
+    <!-- <b-container fluid class="py-5 bg-p-light">
       <b-row>
         <b-container>
           <b-row>
@@ -111,13 +114,14 @@
           </b-row>
         </b-container>
       </b-row>
-    </b-container>
+    </b-container> -->
   </div>
 </template>
 
 <script>
 
 import Navigation from './components/Navigation.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: "App",
@@ -159,8 +163,8 @@ export default {
 
   components: {
     Navigation,
-  }
-
+    Footer,
+  },
   
 };
 </script>
@@ -177,5 +181,11 @@ export default {
 
 .card .btn{
   float: right;
+}
+
+.title{
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary);
 }
 </style>

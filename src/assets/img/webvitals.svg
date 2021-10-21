@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61.421" height="52.269" viewBox="0 0 61.421 52.269">
+  <g id="web-vitals" transform="translate(0 0)">
+    <path id="Path_1" data-name="Path 1" d="M45.327,17.3H24.619a1.4,1.4,0,0,0-.931.233L8.1,29.864a.436.436,0,0,0,0,.7c0,.233.233.233.465.233H45.559A6.75,6.75,0,1,0,45.327,17.3" transform="translate(9.103 21.127)" fill="#00c9db" fill-rule="evenodd"/>
+    <g id="Group_2" data-name="Group 2">
+      <path id="Path_2" data-name="Path 2" d="M37.5,25.5a7.741,7.741,0,0,0-2.559-4.886L10.979,1.539A6.716,6.716,0,0,0,1.439,2.7,6.716,6.716,0,0,0,2.6,12.242L20.053,26.2,2.6,40.162A6.716,6.716,0,0,0,1.439,49.7a6.716,6.716,0,0,0,9.539,1.163L34.944,31.321A6.956,6.956,0,0,0,37.5,25.969V25.5" transform="translate(0.032 -0.068)" fill="#0d55ff" fill-rule="evenodd"/>
+    </g>
+    <path id="Path_3" data-name="Path 3" d="M34.695,24.047A6.747,6.747,0,1,1,27.947,17.3a6.752,6.752,0,0,1,6.747,6.747" transform="translate(26.715 21.127)" fill="#7000f2" fill-rule="evenodd"/>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 <template>
-    <b-navbar toggleable="lg" type="primary" variant="light" sticky="true">
-        <b-navbar-brand href="/">
-            Navbar
+    <b-navbar toggleable="lg" type="primary" variant="light" sticky>
+        <b-navbar-brand class="text-uppercase" :to="links[0].path">
+            Sameer
         </b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse">
@@ -12,11 +12,15 @@
         </b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
-            <b-navbar-nav class="ml-lg-0 ml-auto align-items-center">
-                <b-nav-item href="/" active>
+            <!-- <b-navbar-nav class="ml-lg-0 ml-auto align-items-center">
+                <b-nav-item 
+                    v-for="routes in links"
+                    :to="routes.path"
+                    :key="routes.id"
+                    active>
                     Home
                 </b-nav-item>
-            </b-navbar-nav>
+            </b-navbar-nav> -->
             <b-navbar-nav class="ml-auto align-items-center">
                 <b-link
                     active-class="active"
@@ -25,12 +29,12 @@
                     :key="routes.id"
                     :to="routes.path"
                 >
-                    <b-nav-item>
+                    <b-nav-item :to="routes.path">
                         {{ routes.name }}
                     </b-nav-item>
                 </b-link>
                 <b-nav-item href="#portfolio">
-                    <b-button variant="primary">
+                    <b-button variant="primary" href="#">
                         <b-icon-download class="mr-1" />
                         Download CV
                     </b-button>
@@ -48,20 +52,25 @@ export default {
             links: [
                 {
                     id: 0,
+                    name: 'Home',
+                    path: '/',
+                },
+                {
+                    id: 1,
                     name: 'Portfolio',
                     path: '/portfolio'
                 },
                 {
-                    id: 1,
+                    id: 2,
                     name: 'Services',
                     path: '/services'
                 },
                 {
-                    id: 2,
+                    id: 3,
                     name: 'Why Hire Me?',
-                    path: '/whyMe'
+                    path: '/why-hire-me'
                 },
-            ]
+            ],
         }
     },
 }
